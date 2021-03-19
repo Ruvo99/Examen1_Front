@@ -10,6 +10,10 @@ router.use('/autor', autorRoute);
 router.use('/home', homeRoute);
 router.use('/service', serviceRoute);
 
+router.use('/estoyvivo', (req, res) => {
+    res.send({'status': 'estoy vivo'});
+})
+
 // path con retorno directo
 router.use('/', (req, res) => 
 { 
